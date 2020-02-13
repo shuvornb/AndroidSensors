@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.content_main)
 
         btnShowData.setOnClickListener {
+            //comment
 
         }
     }
