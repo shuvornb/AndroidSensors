@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtViewLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:text="Latitude"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/txtViewLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:text="Longitude" />
+
+    <TextView
+        android:id="@+id/txtViewX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="X-Value" />
+
+    <TextView
+        android:id="@+id/txtViewY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="313dp"
+        android:text="Y-Value" />
+
+    <TextView
+        android:id="@+id/txtViewZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="341dp"
+        android:text="Z-Value" />
+
+    <Button
+        android:id="@+id/btnShowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:text="Show Data" />
+
+</RelativeLayout>
