@@ -11,7 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.content_main)
 
         btnShowData.setOnClickListener {
+            var locationDataProvider = LocationDataProvider()
+            val locationData = locationDataProvider.fetchLocationData(this, this)
 
+            txtViewLat.text = locationData.split(" ")[0]
+            txtViewLong.text = locationData.split(" ")[1]
         }
     }
 }
