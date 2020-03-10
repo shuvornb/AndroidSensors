@@ -1,5 +1,6 @@
 package com.ecit.androidsensors
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.content_main.*
@@ -10,12 +11,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.content_main)
 
-        btnShowData.setOnClickListener {
-            var locationDataProvider = LocationDataProvider()
-            val locationData = locationDataProvider.fetchLocationData(this, this)
+        btnCamera.setOnClickListener {
+            var intent = Intent(this, ImageActivity::class.java)
+            startActivity(intent)
+        }
 
-            txtViewLat.text = locationData.split(" ")[0]
-            txtViewLong.text = locationData.split(" ")[1]
+        btnGPS.setOnClickListener {
+            var gpsIntent = Intent(this, GPSActivity::class.java)
+            startActivity(gpsIntent)
         }
     }
 }
