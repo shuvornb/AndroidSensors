@@ -12,13 +12,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.content_main)
 
         btnCamera.setOnClickListener {
-            var intent = Intent(this, ImageActivity::class.java)
-            startActivity(intent)
+            var cameraIntent = Intent(this, ImageActivity::class.java)
+            startActivity(cameraIntent)
         }
 
         btnGPS.setOnClickListener {
             var gpsIntent = Intent(this, GPSActivity::class.java)
             startActivity(gpsIntent)
+        }
+
+        btnAccelerometer.setOnClickListener {
+            var accIntent = Intent(this, GPSActivity::class.java)
+            startActivity(accIntent)
         }
     }
 }
