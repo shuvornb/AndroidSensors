@@ -1,64 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:id="@+id/relativeLayout"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="match_parent" tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txtViewLat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="104dp"
-        android:text="Latitude"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="237dp" />
-
-    <TextView
-        android:id="@+id/txtViewLong"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="165dp"
-        android:text="Longitude" />
-
+oid:layout_marginEnd="140dp" android:layout_marginBottom="68dp"
+        android:text="@string/longitude"/>-->
     <TextView
         android:id="@+id/txtViewX"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="250dp"
-        android:text="X-Value" />
-
+        android:layout_marginBottom="128dp"
+        android:text="@string/x_value" app:layout_constraintBottom_toTopOf="@+id/txtViewY"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/txtViewY"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="313dp"
-        android:text="Y-Value" />
-
+        android:layout_marginBottom="124dp"
+        android:text="@string/y_value" app:layout_constraintBottom_toTopOf="@+id/txtViewZ"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/txtViewZ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="341dp"
-        android:text="Z-Value" />
-
+        android:layout_marginBottom="120dp" android:text="@string/z_value"
+        android:textSize="14sp" app:layout_constraintBottom_toTopOf="@+id/btnShowData"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"/>
     <Button
         android:id="@+id/btnShowData"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="164dp"
-        android:text="Show Data" />
+        android:layout_width="411dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="16dp" android:text="@string/show_data"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
